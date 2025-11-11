@@ -6,15 +6,15 @@
 let
   # These variable names are used by Aegis backend
   version = "unstable"; #unstable or 25.05
-  username = "nusk";
-  hashed = "$y$j9T$vbKySJdG/XiQmH5h330UB.$Z/sgfa8Qqn/vBIyGIL1MgHex1Bti5g4IcQtCo93NFc1";
-  hashedRoot = "$y$j9T$vbKySJdG/XiQmH5h330UB.$Z/sgfa8Qqn/vBIyGIL1MgHex1Bti5g4IcQtCo93NFc1";
+  username = "vbox";
+  hashed = "$6$1nsldmStLpU7Z.nz$nZoLn8Rjoy7T.H5dT1cG.nDvOyOtO06pWVMJSAfoJdMwAjI/hp4cOQ3FVHh9wyv9f3.i0lVTzB.c9GAI9HJog0";
+  hashedRoot = "$6$1nsldmStLpU7Z.nz$nZoLn8Rjoy7T.H5dT1cG.nDvOyOtO06pWVMJSAfoJdMwAjI/hp4cOQ3FVHh9wyv9f3.i0lVTzB.c9GAI9HJog0";
   hostname = "athenaos";
-  theme = "hackthebox";
+  theme = "temple";
   desktop = "gnome";
   dmanager = "gdm";
   mainShell = "fish";
-  terminal = "kitty";
+  terminal = "alacritty";
   browser = "firefox";
   bootloader = if builtins.pathExists "/sys/firmware/efi" then "systemd" else "grub";
   hm-version = if version == "unstable" then "master" else "release-" + version; # Correspond to home-manager GitHub branches
@@ -59,7 +59,7 @@ in
   services.flatpak.enable = true;
 
   cyber = {
-    enable = true;
+    enable = false;
     role = "web";
   };
 }

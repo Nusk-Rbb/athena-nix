@@ -78,7 +78,7 @@
               "browser.shell.checkDefaultBrowser" = false;
               "browser.ssb.enabled" = true;
               "browser.toolbars.bookmarks.visibility" = "always";
-              #"browser.urlbar.placeholderName" = "DuckDuckGo";
+              "browser.urlbar.placeholderName" = "Google";
               "browser.urlbar.suggest.openpage" = false;
               "datareporting.policy.dataSubmissionEnable" = false;
               "datareporting.policy.dataSubmissionPolicyAcceptedVersion" = 2;

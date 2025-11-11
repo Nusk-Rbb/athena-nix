@@ -26,7 +26,7 @@ in {
     services = {
       udev.packages = with pkgs; [ gnome-settings-daemon ];
       xserver.enable = true;
-      desktopManager.gnome.enable = true;
+      xserver.desktopManager.gnome.enable = true;
 
       gnome = {
         evolution-data-server.enable = true;
@@ -175,7 +175,7 @@ in {
           name = "Terminal";
         };
 
-        "org/gnome/mutter" = {   
+        "org/gnome/mutter" = {
           dynamic-workspaces = false;
         };
 
